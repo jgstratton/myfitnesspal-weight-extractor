@@ -1,0 +1,37 @@
+<!doctype html>
+<style type="text/css">
+	#mainPopup {
+		padding: 10px;
+		height: 200px;
+		width: 400px;
+		font-family: Helvetica, Ubuntu, Arial, sans-serif;
+	}
+	h1 {
+		font-size: 2em;
+	}
+</style>
+
+<div id="mainPopup">
+	<h1>MyFitnessPal Weight Extractor</h1>
+	<p>
+		Visit the "Edit Previous Measurement Entries" page with this extension running and it will automatically progress through your
+		measurements history and save all the entries. Once the process is complete, grab the measurement data and download it to 
+		an excel file.
+	</p>
+	<button id="btnGetMeasurements">Get Measurements</button>
+	<button id="btnReset">Reset</button>
+	<button id="btnDownload">Download</button>
+	<table id="resultsTable">
+		<thead>
+			<tr>
+				<th>Type</th>
+				<th>Date</th>
+				<th>Measurement</th>
+			</tr>
+		</thead>
+		<tbody>
+		</tbody>
+	</table>
+</div>
+<script src="../third-party/jquery.js"></script>
+<script src="popup.js"></script>
